@@ -9,10 +9,10 @@ C_SRCS += \
 ../src/main.c 
 
 ASM_SRCS += \
-../src/asm_fibinacci.asm 
+../src/asm_fibonacci.asm 
 
 OBJS += \
-./src/asm_fibinacci.o \
+./src/asm_fibonacci.o \
 ./src/cr_startup_lpc11xx.o \
 ./src/crp.o \
 ./src/main.o 
