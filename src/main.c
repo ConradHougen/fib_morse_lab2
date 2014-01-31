@@ -30,26 +30,10 @@ typedef struct tuple{
        uint8_t length;
 } tuple;
 
-static const tuple zero      = {0x1F, 5};
-static const tuple one       = {0x0F, 5};
-static const tuple two       = {0x07, 5};
-static const tuple three     = {0x03, 5};
-static const tuple four      = {0x01, 5};
-static const tuple five      = {0x00, 5};
-static const tuple six       = {0x10, 5};
-static const tuple seven     = {0x18, 5};
-static const tuple eight     = {0x1C, 5};
-static const tuple nine      = {0x1E, 5};
-static const tuple ten       = {0x01, 2}; //A
-static const tuple eleven    = {0x08, 4}; //B
-static const tuple twelve    = {0x0A, 4}; //C
-static const tuple thirteen  = {0x04, 3}; //D
-static const tuple fourteen  = {0x00, 1}; //E
-static const tuple fifteen   = {0x02, 4}; //F
-
 static tuple LUT[16] = {{0x1F, 5}, {0x0F, 5}, {0x07, 5}, {0x03, 5}, {0x01, 5},
 		{0x00, 5}, {0x10, 5}, {0x18, 5}, {0x1C, 5}, {0x1E, 5}, {0x01, 2}, {0x08, 4},
 		{0x0A, 4}, {0x04, 3}, {0x00, 1}, {0x02, 4}};
+
 static int L1;
 static int L2;
 static int L3;

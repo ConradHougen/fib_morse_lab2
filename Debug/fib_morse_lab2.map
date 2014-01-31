@@ -99,27 +99,6 @@ Discarded input sections
  .bss           0x00000000        0x0 ./src/main.o
  .rodata.LPC_GPIO
                 0x00000000       0x10 ./src/main.o
- .rodata.zero   0x00000000        0x4 ./src/main.o
- .rodata.one    0x00000000        0x4 ./src/main.o
- .rodata.two    0x00000000        0x4 ./src/main.o
- .rodata.three  0x00000000        0x4 ./src/main.o
- .rodata.four   0x00000000        0x4 ./src/main.o
- .rodata.five   0x00000000        0x4 ./src/main.o
- .rodata.six    0x00000000        0x4 ./src/main.o
- .rodata.seven  0x00000000        0x4 ./src/main.o
- .rodata.eight  0x00000000        0x4 ./src/main.o
- .rodata.nine   0x00000000        0x4 ./src/main.o
- .rodata.ten    0x00000000        0x4 ./src/main.o
- .rodata.eleven
-                0x00000000        0x4 ./src/main.o
- .rodata.twelve
-                0x00000000        0x4 ./src/main.o
- .rodata.thirteen
-                0x00000000        0x4 ./src/main.o
- .rodata.fourteen
-                0x00000000        0x4 ./src/main.o
- .rodata.fifteen
-                0x00000000        0x4 ./src/main.o
  .text          0x00000000        0x0 ./drivers/gpio.o
  .data          0x00000000        0x0 ./drivers/gpio.o
  .bss           0x00000000        0x0 ./drivers/gpio.o
@@ -544,7 +523,7 @@ END GROUP
  *(vtable)
  *(.data*)
  .data.LUT      0x10000000       0x20 ./src/main.o
- .data.mask.4476
+ .data.mask.4460
                 0x10000020        0x4 ./src/main.o
  .data.SystemCoreClock
                 0x10000024        0x4 C:\Users\Conrad\Documents\LPCXpresso_6.1.2_177\workspace\CMSIS_CORE_LPC11xx\Debug\libCMSIS_CORE_LPC11xx.a(system_LPC11xx.o)
@@ -560,7 +539,7 @@ END GROUP
  .bss.L3        0x10000030        0x4 ./src/main.o
  .bss.total_len
                 0x10000034        0x4 ./src/main.o
- .bss.i.4445    0x10000038        0x4 ./src/main.o
+ .bss.i.4429    0x10000038        0x4 ./src/main.o
  .bss.timer32_0_counter
                 0x1000003c        0x4 ./drivers/timer32.o
                 0x1000003c                timer32_0_counter
@@ -721,14 +700,14 @@ OUTPUT(fib_morse_lab2.axf elf32-littlearm)
  .debug_line    0x00000bbc      0x544 ./drivers/timer32.o
  .debug_line    0x00001100      0x425 C:\Users\Conrad\Documents\LPCXpresso_6.1.2_177\workspace\CMSIS_CORE_LPC11xx\Debug\libCMSIS_CORE_LPC11xx.a(system_LPC11xx.o)
 
-.debug_info     0x00000000     0x2156
+.debug_info     0x00000000     0x2041
  .debug_info    0x00000000       0x8f ./src/asm_fibonacci.o
  .debug_info    0x0000008f      0x252 ./src/cr_startup_lpc11xx.o
  .debug_info    0x000002e1       0x48 ./src/crp.o
- .debug_info    0x00000329      0x4a5 ./src/main.o
- .debug_info    0x000007ce      0x7a0 ./drivers/gpio.o
- .debug_info    0x00000f6e      0xd04 ./drivers/timer32.o
- .debug_info    0x00001c72      0x4e4 C:\Users\Conrad\Documents\LPCXpresso_6.1.2_177\workspace\CMSIS_CORE_LPC11xx\Debug\libCMSIS_CORE_LPC11xx.a(system_LPC11xx.o)
+ .debug_info    0x00000329      0x390 ./src/main.o
+ .debug_info    0x000006b9      0x7a0 ./drivers/gpio.o
+ .debug_info    0x00000e59      0xd04 ./drivers/timer32.o
+ .debug_info    0x00001b5d      0x4e4 C:\Users\Conrad\Documents\LPCXpresso_6.1.2_177\workspace\CMSIS_CORE_LPC11xx\Debug\libCMSIS_CORE_LPC11xx.a(system_LPC11xx.o)
 
 .debug_abbrev   0x00000000      0x67c
  .debug_abbrev  0x00000000       0x14 ./src/asm_fibonacci.o
@@ -781,18 +760,18 @@ OUTPUT(fib_morse_lab2.axf elf32-littlearm)
  .debug_macinfo
                 0x00014d5a     0x57ba C:\Users\Conrad\Documents\LPCXpresso_6.1.2_177\workspace\CMSIS_CORE_LPC11xx\Debug\libCMSIS_CORE_LPC11xx.a(system_LPC11xx.o)
 
-.debug_str      0x00000000      0xbfa
+.debug_str      0x00000000      0xbac
  .debug_str     0x00000000      0x1c7 ./src/cr_startup_lpc11xx.o
                                 0x1da (size before relaxing)
  .debug_str     0x000001c7       0x16 ./src/crp.o
                                  0xba (size before relaxing)
- .debug_str     0x000001dd      0x1a4 ./src/main.o
-                                0x26f (size before relaxing)
- .debug_str     0x00000381      0x2f0 ./drivers/gpio.o
+ .debug_str     0x000001dd      0x156 ./src/main.o
+                                0x221 (size before relaxing)
+ .debug_str     0x00000333      0x2f0 ./drivers/gpio.o
                                 0x44a (size before relaxing)
- .debug_str     0x00000671      0x4f0 ./drivers/timer32.o
+ .debug_str     0x00000623      0x4f0 ./drivers/timer32.o
                                 0x8a3 (size before relaxing)
- .debug_str     0x00000b61       0x99 C:\Users\Conrad\Documents\LPCXpresso_6.1.2_177\workspace\CMSIS_CORE_LPC11xx\Debug\libCMSIS_CORE_LPC11xx.a(system_LPC11xx.o)
+ .debug_str     0x00000b13       0x99 C:\Users\Conrad\Documents\LPCXpresso_6.1.2_177\workspace\CMSIS_CORE_LPC11xx\Debug\libCMSIS_CORE_LPC11xx.a(system_LPC11xx.o)
                                 0x3cb (size before relaxing)
 
 .debug_frame    0x00000000      0x3b8
